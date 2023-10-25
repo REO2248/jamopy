@@ -1,0 +1,15 @@
+from jamo import *
+while True:
+    자음입력 = input('자음: ')
+    모음입력 = input('모음: ')
+    받침입력 = input('받침: ')
+    자음번호 = 자음목록.index(자음입력)
+    모음번호 = 모음목록.index(모음입력)
+    받침번호 = 받침목록.index(받침입력)
+    자음 = jamoutils.자음(자음번호)
+    모음 = jamoutils.모음(모음번호)
+    받침 = jamoutils.받침(받침번호)
+    print(자음번호,모음번호,받침번호)
+    글자 = jamoutils.조선글자(자음,모음,받침)
+    결합된 = 결합([글자])
+    print(결합된)
